@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:background="@color/top_bar">
+
+
+    <ImageView
+        android:id="@+id/top_menu"
+        style="@style/top_bar"
+        android:layout_marginLeft="10dp"
+        android:background="@drawable/ic_menu"/>
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        android:layout_centerInParent="true"
+        >
+
+    <TextView
+        android:id="@+id/top_my"
+        style="@style/top_bar"
+        android:text="我的音乐"/>
+        <!--android:layout_marginLeft="140dp"-->
+        <!--android:layout_toRightOf="@id/top_menu"-->
+
+
+    <TextView
+        android:id="@+id/top_zx"
+        style="@style/top_bar"
+        android:layout_marginLeft="20dp"
+        android:layout_toRightOf="@id/top_my"
+        android:text="在线音乐"/>
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/top_serch"
+        style="@style/top_bar"
+        android:layout_alignParentRight="true"
+        android:layout_margin="10dp"
+        android:background="@drawable/ic_menu_search"/>
+</RelativeLayout>
